@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450">
+  <rect width="300" height="450" fill="#66735a"/>
+  <circle cx="230" cy="120" r="140" fill="#ffffff" opacity="0.07"/>
+  <circle cx="60" cy="330" r="90" fill="#000000" opacity="0.08"/>
+  <line x1="40" y1="330" x2="100" y2="330" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2"/>
+  <text x="40" y="375" font-family="Georgia, serif" font-size="34" fill="#ffffff">Parasite</text>
+  <text x="40" y="405" font-family="Georgia, serif" font-size="16" fill="#ffffff" opacity="0.7">2019</text>
+</svg>

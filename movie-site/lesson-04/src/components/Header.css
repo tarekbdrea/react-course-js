@@ -1,0 +1,51 @@
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header__logo-mark {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--bg);
+  background: var(--accent);
+}
+
+.header__nav {
+  display: flex;
+  gap: 28px;
+}
+
+.header__link {
+  color: var(--muted);
+  font-weight: 500;
+  padding: 20px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.header__link:hover {
+  color: var(--ink);
+}
+
+.header__link--active {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}

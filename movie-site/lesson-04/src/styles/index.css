@@ -1,0 +1,138 @@
+/* ===== צבעים ומידות של כל האתר ===== */
+:root {
+  --bg: #f5f3ee;
+  --surface: #ffffff;
+  --ink: #26241f;
+  --muted: #6e6a62;
+  --border: #e3dfd6;
+  --accent: #2f5d62;
+  --accent-soft: #e3edeb;
+  --gold: #a8803a;
+
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(38, 36, 31, 0.06), 0 4px 16px rgba(38, 36, 31, 0.05);
+}
+
+/* ===== איפוס ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== בסיס ===== */
+body {
+  font-family: "Heebo", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+/* ה־Footer נשאר למטה, גם כשיש מעט תוכן */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== החלק המרכזי של העמוד ===== */
+.page {
+  flex-grow: 1;
+  padding-top: 40px;
+  padding-bottom: 56px;
+}
+
+.page__intro {
+  margin-bottom: 32px;
+}
+
+.page__intro h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.page__intro p {
+  color: var(--muted);
+}
+
+/* ===== כפתור ===== */
+.btn {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: var(--accent);
+}
+
+/* כפתור פעיל — בצבע הראשי */
+.btn--active {
+  color: var(--surface);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* שורה מעל רשימה: כפתורים וסינונים */
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* רווח מעל השורה, כשהיא באה אחרי רשימה */
+.movie-list + .toolbar {
+  margin-top: 48px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+/* קו מפריד בין קבוצות של כפתורים */
+.toolbar__divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+}
+/* כפתור "הצג עוד" באמצע, מתחת לרשימה */
+.more {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
